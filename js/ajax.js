@@ -10,8 +10,8 @@ $( document ).ready(function() {
 function sendAjaxForm(result_form, ajax_form, url) {
     $.ajax({
         url:     url,
-        type:     "POST", //метод отправки
-        dataType: "html", //формат данных
+        type:     "POST",
+        dataType: "html",
         data: $("#"+ajax_form).serialize(),  // Сеарилизуем объект
         success: function(data) { //Данные отправлены успешно
             console.log(true);
